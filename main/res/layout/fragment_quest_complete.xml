@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.liferpg.QuestCompleteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/congratulationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Quest Complete!"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/congratulationDescriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/congratulationView"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="1000"
+
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/congratulationDescriptionView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/startEXPView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/congratulationDescriptionView"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/endEXPView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_toEndOf="@+id/congratulationDescriptionView"
+        android:layout_marginStart="5dp" />
+</RelativeLayout>

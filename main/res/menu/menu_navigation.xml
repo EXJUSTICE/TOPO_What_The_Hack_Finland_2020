@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/questHeader"
+            android:title="Insert Current Active Quest Name"/>
+        <item
+            android:id="@+id/nearbyHeader"
+            android:title="Quests Nearby:">
+
+
+        <menu>
+            <item
+                android:icon="@drawable/ic_button"
+                android:id="@+id/itemOne"
+                android:title="One" />
+            <item
+                android:icon="@drawable/ic_button"
+                android:id="@+id/itemTwo"
+                android:title="Two" />
+            <item
+                android:icon="@drawable/ic_button"
+                android:id="@+id/itemThree"
+                android:title="Three" />
+            <item
+                android:icon="@drawable/ic_button"
+                android:id="@+id/itemFour"
+                android:title="Four" />
+        </menu>
+
+        </item>
+    </group>
+</menu>

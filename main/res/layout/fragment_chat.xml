@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/chatImgView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/friendView1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-8dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/friendView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="78dp"
+            android:text="Anna"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/chatImgView2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/friendView1"
+            android:layout_toEndOf="@+id/chatEditText"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/chatTextView2"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/friendView4"
+            android:layout_below="@+id/chatImgView"
+            android:layout_marginStart="-100dp"
+            android:layout_marginTop="2dp"
+            android:text="James"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/chatImgView3"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/chatImgView"
+            android:layout_below="@+id/chatImgView2"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/chatTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/friendView1"
+            android:layout_below="@+id/chatImgView2"
+            android:text="Judith"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/chatImgView4"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/chatImgView2"
+            android:layout_below="@+id/chatImgView3"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/friendView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_below="@+id/chatImgView3"
+            android:layout_marginStart="142dp"
+            android:text="Bob"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/chatEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="114dp"
+            android:ems="10"
+            android:hint="Type response here"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnChatSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-114dp"
+            android:text="Send" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chatTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Chat with"
+        android:textSize="40dp" />
+
+</RelativeLayout>

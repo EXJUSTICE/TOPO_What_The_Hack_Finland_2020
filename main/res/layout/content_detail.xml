@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.xu.liferpg.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/detailQuestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:text="Quest Name Header" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attempt"
+            android:id="@+id/attempt"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout1"
+        android:layout_marginTop="58dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/detailQuestName"
+        android:layout_alignParentStart="true">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBox1"
+
+            android:layout_marginLeft="200dp"/>
+    <TextView
+        android:id="@+id/typeView1"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+
+
+
+        android:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/objView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/typeView1"
+        android:layout_below="@+id/typeView1"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/layout1">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBox2"
+
+            android:layout_marginLeft="200dp"/>
+    <TextView
+        android:id="@+id/typeView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:text="TextView"
+         />
+
+    <TextView
+        android:id="@+id/objView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:layout_below="@+id/typeView2"
+        android:layout_alignStart="@+id/typeView2" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout3"
+        android:layout_above="@+id/attempt"
+        android:layout_alignStart="@+id/layout2"
+        android:layout_marginBottom="28dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBox3"
+
+            android:layout_marginLeft="200dp"/>
+    <TextView
+        android:id="@+id/typeView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="20dp"
+
+
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/objView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/typeView3"
+        android:layout_below="@+id/typeView3"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout4"
+        android:layout_above="@+id/attempt"
+        android:layout_alignStart="@+id/layout3"
+        android:layout_marginBottom="28dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBox4"
+
+            android:layout_marginLeft="200dp"/>
+        <TextView
+            android:id="@+id/typeView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="20dp"
+
+
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/objView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/typeView4"
+            android:layout_below="@+id/typeView4"
+            android:layout_marginTop="25dp"
+            android:text="TextView" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
